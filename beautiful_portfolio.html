@@ -6,7 +6,7 @@
 <title>Sudhanshu Kumar — Portfolio</title>
 
 <style>
-/* ================== ITERATION 100: ULTRA-MODERN GLASS PORTFOLIO ================== */
+/* ================== ITERATION 101: ULTRA-MODERN GLASS PORTFOLIO + CONTENT ================== */
 
 :root {
   --bg: #0b0f19;
@@ -38,7 +38,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ================== NAVBAR ================== */
 nav {
   backdrop-filter: blur(var(--blur));
   background: var(--panel);
@@ -67,14 +66,12 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* ================== WRAPPER ================== */
 .wrap {
   max-width: 1200px;
   margin: 32px auto;
   padding: 0 22px;
 }
 
-/* ================== HERO ================== */
 .hero {
   display: flex;
   gap: 28px;
@@ -134,7 +131,6 @@ nav a:hover {
   transform: scale(1.1) rotate(-2deg);
 }
 
-/* ================== GRID LAYOUT ================== */
 .grid {
   margin-top: 32px;
   display: grid;
@@ -172,7 +168,6 @@ nav a:hover {
   margin-bottom: 6px;
 }
 
-/* ================== PROJECTS ================== */
 .project h4 {
   color: var(--accent2);
   margin-bottom: 6px;
@@ -190,7 +185,6 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* ================== FOOTER ================== */
 footer {
   text-align: center;
   margin-top: 48px;
@@ -198,7 +192,6 @@ footer {
   font-size: 14px;
 }
 
-/* ================== ANIMATIONS ================== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -209,7 +202,6 @@ footer {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ================== RESPONSIVE ================== */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -243,6 +235,9 @@ footer {
   <a href="#about">About</a>
   <a href="#acad">Academic</a>
   <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <main class="wrap">
@@ -267,13 +262,13 @@ footer {
 
     <article class="card" id="about">
       <h2>About</h2>
-      <p>Passionate developer who learns by building. I work on full-stack apps and explore machine learning — especially neural networks and function-learning models.</p>
+      <p>Passionate developer who learns by building. I work on full-stack apps and explore machine learning — especially neural networks and function-learning models. I enjoy turning complex problems into elegant solutions.</p>
     </article>
 
     <aside class="card" id="acad">
       <h3>Academic Details</h3>
       <ul>
-        <li><strong>NIT Jalandhar</strong></li>
+        <li><strong>NIT Jalandhar</strong> — B.Tech, CSE (2025-2029)</li>
         <li>12th — THE EARTH PUBLIC SCHOOL (2024)</li>
         <li>10th — HOLY CROSS PUBLIC SCHOOL (2022)</li>
       </ul>
@@ -281,18 +276,57 @@ footer {
 
     <section class="card" id="projects" style="grid-column: 1 / -1;">
       <h2>Projects</h2>
-
       <div class="project">
         <h4>Personal Finance Tracker</h4>
         <p>Full-stack MERN app to track transactions, categories, and monthly insights with charts.</p>
       </div>
-
       <div class="project">
         <h4>To-Do Manager</h4>
         <p>Simple, elegant task manager with CRUD, filters, and smart reminders.</p>
       </div>
-
+      <div class="project">
+        <h4>ML Function Learner</h4>
+        <p>Python project that trains neural networks to learn mathematical functions and visualize their predictions.</p>
+      </div>
     </section>
+
+    <article class="card" id="experience">
+      <h2>Experience & Internships</h2>
+      <ul>
+        <li><strong>Frontend Intern — XYZ Solutions</strong> (June 2025 - July 2025)  
+        Built responsive components with React and integrated APIs.</li>
+        <li><strong>ML Research Assistant — NIT Jalandhar</strong> (Aug 2025 - Present)  
+        Implemented neural network models for function approximation experiments.</li>
+      </ul>
+    </article>
+
+    <aside class="card" id="certifications">
+      <h3>Certifications & Achievements</h3>
+      <ul>
+        <li>Deep Learning Specialization — Coursera</li>
+        <li>Full-Stack Web Development — freeCodeCamp</li>
+        <li>Winner — Hackathon 2025 (Smart City Solutions)</li>
+        <li>Python & Data Structures — NPTEL</li>
+      </ul>
+    </aside>
+
+    <section class="card" id="contact" style="grid-column: 1 / -1;">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sudhanshu.kumar@example.com">sudhanshu.kumar@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sudhanshukumar" target="_blank">linkedin.com/in/sudhanshukumar</a></p>
+      <p>GitHub: <a href="https://github.com/sudhanshukumar" target="_blank">github.com/sudhanshukumar</a></p>
+      <p>Phone: +91-7091698669</p>
+    </section>
+
+    <article class="card">
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <li>Coding Challenges & Problem Solving</li>
+        <li>Exploring AI & Neural Networks</li>
+        <li>Gaming & Tech Reviews</li>
+        <li>Reading Sci-Fi & Technology Blogs</li>
+      </ul>
+    </article>
 
   </section>
 
